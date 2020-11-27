@@ -1,0 +1,77 @@
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Discross - Register</title>
+  </head>
+  <body style="margin: 0;" bgcolor="#303338">
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="index.html"><img src="resources/logo.png" alt="Logo"></a></td>
+          <td>&nbsp;&nbsp;</td>
+          <td><font size="7" face="Arial, Helvetica, sans-serif" color="#dddddd">DISCROSS</font></td>
+          <td width="100%" align="right"><font size="4" face="Arial, Helvetica, sans-serif" color="#dddddd">&nbsp;&nbsp;<a style="color: #dddddd;" href="login.html"><font color="#dddddd">Login</font></a>&nbsp;&nbsp;</font><font size="4" face="Arial, Helvetica, sans-serif" color="#dddddd">&nbsp;&nbsp;<a style="color: #dddddd;" href="register.html"><font color="#dddddd">Register</font></a>&nbsp;&nbsp;</font></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr style="margin: 0; position: relative; bottom: 4px;">
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>
+            <form action="/register" method="post">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <font size="6" face="Arial, Helvetica, sans-serif" color="#dddddd">Register</font><br><br>
+                      <font face="Arial, Helvetica, sans-serif" color="#dddddd">
+                        Username:
+                        <br><br>
+                        <div style="padding: 16px;background: #393c40;width: 300px;border-radius: 10px;"><input type="text" name="username" id="username" value="" style="color: #dddddd;background: #393c40;border: none;width: 100%;outline: none;box-shadow: 0 0 0 50px #393c40 inset;-webkit-text-fill-color: #dddddd;" placeholder="Username"></div>
+                        <br><br>
+                        <font face="Arial, Helvetica, sans-serif" color="#dddddd">
+                          Password:<br><br>(don't use your Discord password)
+                          <br><br>
+                          <div style="padding: 16px;background: #393c40;width: 300px;border-radius: 10px;"><input type="password" name="password" id="password" value="" style="color: #dddddd;background: #393c40;border: none;width: 100%;outline: none;box-shadow: 0 0 0 50px #393c40 inset;-webkit-text-fill-color: #dddddd;" placeholder="Password"></div>
+                          <br>
+                          <font face="Arial, Helvetica, sans-serif" color="#dddddd">
+                            Confirm password:
+                            <br><br>
+                            <div style="padding: 16px;background: #393c40;width: 300px;border-radius: 10px;"><input type="password" name="confirm" id="confirm" value="" style="color: #dddddd;background: #393c40;border: none;width: 100%;outline: none;box-shadow: 0 0 0 50px #393c40 inset;-webkit-text-fill-color: #dddddd;" placeholder="Confirm password"></div>
+                            <br>{$ERROR}<br>
+                            <input type="submit" style="border-radius: 10px;color: #dddddd;height: 44px;width:150px;border: none;background: #393c40;;" value="Register">
+                          </font>
+                        </font>
+                      </font>
+                    </td>
+                    <td valign="top">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td style="vetical-align: top;" valign="top">
+                      <br><br><br>
+                      <font face="Arial, Helvetica, sans-serif" color="#dddddd">
+                        Verification code:
+                        <br><br>
+                        Type ^connect on a server with Discross to get this.
+                        <br><br>
+                        <div style="padding: 16px;background: #393c40;width: 300px;border-radius: 10px;"><input type="text" name="token" id="token" value="" style="color: #dddddd;background: #393c40;border: none;width: 100%;outline: none;box-shadow: 0 0 0 50px #393c40 inset;-webkit-text-fill-color: #dddddd;" placeholder="Verification code"></div>
+                      </font>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

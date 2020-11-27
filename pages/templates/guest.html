@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Discross - Guest Login</title>
+  </head>
+  <body style="margin: 0;" bgcolor="#303338">
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="index.html"><img src="resources/logo.png" alt="Logo"></a></td>
+          <td>&nbsp;&nbsp;</td>
+          <td><font size="7" face="Arial, Helvetica, sans-serif" color="#dddddd">DISCROSS</font></td>
+          <td width="100%" align="right"><font size="4" face="Arial, Helvetica, sans-serif" color="#dddddd">&nbsp;&nbsp;<a style="color: #dddddd;" href="login.html"><font color="#dddddd">Login</font></a>&nbsp;&nbsp;</font><font size="4" face="Arial, Helvetica, sans-serif" color="#dddddd">&nbsp;&nbsp;<a style="color: #dddddd;" href="register.html"><font color="#dddddd">Register</font></a>&nbsp;&nbsp;</font></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr style="margin: 0; position: relative; bottom: 4px;">
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>
+            <form action="/guest" method="post">
+              <font size="6" face="Arial, Helvetica, sans-serif" color="#dddddd">Guest Login</font><br><br>
+              <font face="Arial, Helvetica, sans-serif" color="#dddddd">
+                Choose a username:
+                <br><br>
+                <div style="padding: 16px;background: #393c40;width: 300px;border-radius: 10px;"><input type="text" name="username" id="username" value="" style="color: #dddddd;background: #393c40;border: none;width: 100%;outline: none;box-shadow: 0 0 0 50px #393c40 inset;-webkit-text-fill-color: #dddddd;" placeholder="Username"></div>
+                <br>
+                <a href="/forgot.html" style="text-decoration none;">
+                  <font color="#999999" size="4" face="Arial, Helvetica, sans-serif">
+                    Forgot username or password
+                  </font>
+                </a>
+              <br>
+                <br>{$ERROR}<br>
+                <input type="hidden" id="redirect" name="redirect" value="{$REDIRECT_URL}">
+                <input type="submit" style="border-radius: 10px;color: #dddddd;height: 44px;width:150px;border: none;background: #393c40;" value="Login">
+                <br>
+                <br>
+                <a style="text-decoration none;" href="/login.html">
+                  <font size="4" face="Arial, Helvetica, sans-serif" color="#999999">Normal login</font>
+                </a>
+              </font>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

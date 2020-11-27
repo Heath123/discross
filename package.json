@@ -1,0 +1,35 @@
+{
+  "name": "discross",
+  "version": "0.9.0",
+  "description": "A webhook bridge to send messages on Discord through a webpage",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.7",
+    "discord.js": "github:discordjs/discord.js",
+    "escape-html": "^1.0.3",
+    "he": "^1.2.0",
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^10.0.0",
+    "mime-types": "^2.1.26",
+    "owasp-password-strength-test": "^1.3.0",
+    "sqlite3": "^4.1.1",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heath123/discross.git"
+  },
+  "author": "Heath Mitchell, circuit10#0158, github.com/Heath123, heath.mitchell27@gmail.com",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Heath123/discross/issues"
+  },
+  "homepage": "https://github.com/Heath123/discross#readme"
+}

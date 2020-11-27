@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Discross - Forgot username or password</title>
+  </head>
+  <body style="margin: 0;" bgcolor="#303338">
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="index.html"><img src="resources/logo.png" alt="Logo"></a></td>
+          <td>&nbsp;&nbsp;</td>
+          <td><font size="7" face="Arial, Helvetica, sans-serif" color="#dddddd">DISCROSS</font></td>
+          <td width="100%" align="right"><font size="4" face="Arial, Helvetica, sans-serif" color="#dddddd">&nbsp;&nbsp;<a style="color: #dddddd;" href="login.html"><font color="#dddddd">Login</font></a>&nbsp;&nbsp;</font><font size="4" face="Arial, Helvetica, sans-serif" color="#dddddd">&nbsp;&nbsp;<a style="color: #dddddd;" href="register.html"><font color="#dddddd">Register</font></a>&nbsp;&nbsp;</font></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr style="margin: 0; position: relative; bottom: 4px;">
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>
+            <form action="/forgot" method="post">
+              <font size="6" face="Arial, Helvetica, sans-serif" color="#dddddd">Forgot username or password<br>
+              WARNING:<br>
+              This will delete your account so that you can create a new one.</font>
+              <font face="Arial, Helvetica, sans-serif" color="#dddddd">
+                <br><br>
+                Verification code:
+                <br><br>
+                Type ^connect on a server with Discross to get this.
+                <br><br>
+                <div style="padding: 16px;background: #393c40;width: 300px;border-radius: 10px;"><input type="text" name="token" id="token" value="" style="color: #dddddd;background: #393c40;border: none;width: 100%;outline: none;box-shadow: 0 0 0 50px #393c40 inset;-webkit-text-fill-color: #dddddd;" placeholder="Verification code"></div>
+                <br>{$ERROR}<br>
+                <input type="submit" style="border-radius: 10px;color: #dddddd;height: 44px;width:150px;border: none;background: #393c40;" value="Delete account">
+              </font>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
