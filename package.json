@@ -4,7 +4,7 @@
   "description": "A webhook bridge to send messages on Discord through a webpage",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bcrypt": "^3.0.7",
     "discord.js": "github:discordjs/discord.js",
     "escape-html": "^1.0.3",
