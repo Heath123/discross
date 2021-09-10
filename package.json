@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.21.2",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "discord.js": "github:discordjs/discord.js",
     "escape-html": "^1.0.3",
     "he": "^1.2.0",
