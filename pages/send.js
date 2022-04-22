@@ -3,8 +3,6 @@ const auth = require('../authentication.js');
 const bot = require('../bot.js');
 const discord = require('discord.js');
 
-const send_special = require('../secrets/send_special.js'); // A secret function that proxies the webhook for security. Does nothing in the public version.
-
 function strReplace(string, needle, replacement) {
   return string.split(needle).join(replacement||"");
 };
@@ -37,13 +35,6 @@ exports.sendMessage = async function sendMessage(bot, req, res, args, discordID)
     // if (user.permissionsIn(channel).FLAGS)]
     if (!member.permissionsIn(channel).has("SEND_MESSAGES", true)) { // True always allows admins to send messages
       res.write("You don't have permission to do that!");
-      res.end();
-      return;
-    }
-
-    if (channel.guild.id == 421771267100901377) { // A secret function that proxies the webhook for security. Only for The Wii Hacking House because I have to hardcode the webhook URLs and that's the most likely target. I have a thing that automatically shuts the bot down if any server gets attacked anyway.
-      await send_special.send(channel, parsedurl.query.message, {username: username, avatarURL: user.avatarURL(), disableEveryone: true});
-      res.writeHead(302, {"Location": "/channels/" + parsedurl.query.channel + "#end"});
       res.end();
       return;
     }

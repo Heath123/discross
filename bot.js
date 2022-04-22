@@ -33,13 +33,8 @@ client.on('message', async function (msg) {
     if (msg.webhookID) {
       msg.reply("you're already using Discross!")
     } else {
-      if (msg.guild.id === '421771267100901377' || msg.guild.id === '439461201731387392') {
-        msg.author.send('Verification code:\n`' + (await auth.createVerificationCode(msg.author.id)) + '`')
-        msg.reply('you have been sent a direct message with your verification code.')
-      } else {
-        msg.author.send('Please join The Wii Hacking house to register.\nhttps://discord.gg/pXdeUqb')
-        msg.reply('please join The Wii Hacking house to register.')
-      }
+      msg.author.send('Verification code:\n`' + (await auth.createVerificationCode(msg.author.id)) + '`')
+      msg.reply('you have been sent a direct message with your verification code.')
     }
   }
 
